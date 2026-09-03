@@ -1,0 +1,12 @@
+{
+  "model": "mlx-community/whisper-large-v3-turbo",
+  "language": "zh",
+  "word_timestamps": true,
+  "condition_on_previous_text": true,
+  "max_glossary_chars": 6000,
+  "glossary_files": [
+    "glossary/asr-terms.txt",
+    "glossary/custom-terms.txt"
+  ]
+}
+

@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+PROJECT_DIR=$(dirname "$SCRIPT_DIR")
+PYTHON="$PROJECT_DIR/.venv/bin/python"
+
+if [ ! -x "$PYTHON" ]; then
+  echo "Whisper environment is missing. Run: $PROJECT_DIR/bin/setup" >&2
+  exit 2
+fi
+
+exec "$PYTHON" "$SCRIPT_DIR/transcribe.py" "$@"
+

@@ -1,0 +1,9 @@
+# Add names and terms for the current course or laboratory, one per line.
+# Keep canonical capitalization and include aliases on the same line.
+# Examples (remove the leading # when used):
+# 课程名称 / English course name
+# 教师姓名 / English spelling
+# 实验室成员姓名
+# 项目代号 Aurora-7
+# 函数名 calculate_partition_function
+

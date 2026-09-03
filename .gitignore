@@ -1,0 +1,17 @@
+.DS_Store
+.venv/
+.cache/
+models/
+__pycache__/
+*.py[cod]
+*.log
+
+# Recordings, source materials, transcripts, and generated notes may be private.
+recordings/*
+!recordings/.gitkeep
+materials/*
+!materials/.gitkeep
+transcripts/*
+!transcripts/.gitkeep
+notes/*
+!notes/.gitkeep

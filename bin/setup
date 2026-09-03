@@ -1,0 +1,31 @@
+#!/bin/sh
+set -eu
+
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+PROJECT_DIR=$(dirname "$SCRIPT_DIR")
+VENV_DIR="$PROJECT_DIR/.venv"
+
+if [ -n "${PYTHON_BIN:-}" ]; then
+  PYTHON="$PYTHON_BIN"
+elif command -v python3.13 >/dev/null 2>&1; then
+  PYTHON=$(command -v python3.13)
+elif command -v python3.12 >/dev/null 2>&1; then
+  PYTHON=$(command -v python3.12)
+elif [ -x /opt/homebrew/bin/python3 ]; then
+  PYTHON=/opt/homebrew/bin/python3
+else
+  PYTHON=$(command -v python3)
+fi
+
+"$PYTHON" -c 'import sys; assert sys.version_info >= (3, 10), "Python 3.10+ is required"'
+
+if [ ! -d "$VENV_DIR" ]; then
+  "$PYTHON" -m venv "$VENV_DIR"
+fi
+
+"$VENV_DIR/bin/python" -m pip install --upgrade pip
+"$VENV_DIR/bin/python" -m pip install -r "$PROJECT_DIR/requirements.txt"
+
+echo "Environment ready: $VENV_DIR"
+echo "Next: $PROJECT_DIR/bin/transcribe --doctor"
+

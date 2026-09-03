@@ -1,0 +1,127 @@
+# One canonical entry per line. These terms are passed to Whisper as context.
+中国科学技术大学 / USTC
+希尔伯特空间 / Hilbert space
+线性空间 / linear space / vector space
+内积空间 / inner product space
+厄米算符 / Hermitian operator
+幺正算符 / unitary operator
+本征值 / eigenvalue
+本征矢 / eigenvector
+狄拉克符号 / Dirac notation
+左矢 / bra
+右矢 / ket
+张量积 / tensor product
+傅里叶变换 / Fourier transform
+拉普拉斯变换 / Laplace transform
+梯度 / gradient
+散度 / divergence
+旋度 / curl
+拉格朗日量 / Lagrangian
+哈密顿量 / Hamiltonian
+欧拉-拉格朗日方程 / Euler-Lagrange equation
+薛定谔方程 / Schrodinger equation
+海森堡绘景 / Heisenberg picture
+相互作用绘景 / interaction picture
+微扰理论 / perturbation theory
+变分原理 / variational principle
+边界条件 / boundary condition
+初始条件 / initial condition
+常微分方程 / ordinary differential equation / ODE
+偏微分方程 / partial differential equation / PDE
+格林函数 / Green's function
+留数定理 / residue theorem
+渐近展开 / asymptotic expansion
+大 O 记号 / Big O notation
+概率分布 / probability distribution
+条件概率 / conditional probability
+贝叶斯定理 / Bayes' theorem
+期望 / expectation
+方差 / variance
+协方差 / covariance
+高斯分布 / Gaussian distribution
+马尔可夫链 / Markov chain
+最大似然估计 / maximum likelihood estimation / MLE
+量子比特 / qubit
+量子叠加 / quantum superposition
+量子纠缠 / quantum entanglement
+密度矩阵 / density matrix
+泡利矩阵 / Pauli matrix
+布洛赫球 / Bloch sphere
+玻恩规则 / Born rule
+退相干 / decoherence
+量子信道 / quantum channel
+克劳斯算符 / Kraus operator
+正算符值测度 / positive operator-valued measure / POVM
+保真度 / fidelity
+迹距离 / trace distance
+不可克隆定理 / no-cloning theorem
+量子纠错 / quantum error correction / QEC
+稳定子 / stabilizer
+错误症候 / syndrome
+贝尔态 / Bell state
+格林伯格-霍恩-蔡林格态 / GHZ state
+量子傅里叶变换 / quantum Fourier transform / QFT
+量子近似优化算法 / Quantum Approximate Optimization Algorithm / QAOA
+变分量子本征求解器 / Variational Quantum Eigensolver / VQE
+张量网络 / tensor network
+矩阵乘积态 / matrix product state / MPS
+数据结构 / data structure
+时间复杂度 / time complexity
+空间复杂度 / space complexity
+动态规划 / dynamic programming
+分治算法 / divide-and-conquer algorithm
+图灵机 / Turing machine
+有限状态机 / finite-state machine
+编译器 / compiler
+操作系统 / operating system
+进程 / process
+线程 / thread
+互斥锁 / mutex
+信号量 / semaphore
+并发 / concurrency
+并行 / parallelism
+分布式系统 / distributed system
+一致性 / consistency
+共识算法 / consensus algorithm
+数据库事务 / database transaction
+原子性、一致性、隔离性、持久性 / ACID
+传输控制协议 / Transmission Control Protocol / TCP
+用户数据报协议 / User Datagram Protocol / UDP
+应用程序编程接口 / application programming interface / API
+版本控制 / version control
+Git
+GitHub
+Python
+NumPy
+SciPy
+Pandas
+PyTorch
+TensorFlow
+JAX
+CUDA
+机器学习 / machine learning
+深度学习 / deep learning
+神经网络 / neural network
+梯度下降 / gradient descent
+反向传播 / backpropagation
+损失函数 / loss function
+交叉熵 / cross entropy
+正则化 / regularization
+过拟合 / overfitting
+欠拟合 / underfitting
+训练集、验证集、测试集 / training, validation, and test sets
+卷积神经网络 / convolutional neural network / CNN
+循环神经网络 / recurrent neural network / RNN
+Transformer
+注意力机制 / attention mechanism
+自注意力 / self-attention
+词嵌入 / embedding
+词元 / token
+大语言模型 / large language model / LLM
+检索增强生成 / retrieval-augmented generation / RAG
+强化学习 / reinforcement learning
+马尔可夫决策过程 / Markov decision process / MDP
+图神经网络 / graph neural network / GNN
+受试者工作特征曲线 / ROC curve
+曲线下面积 / area under the curve / AUC
+
