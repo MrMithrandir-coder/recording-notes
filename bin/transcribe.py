@@ -115,6 +115,15 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def portable_source_name(path: Path) -> str:
+    """Avoid storing a user's absolute filesystem path in transcript metadata."""
+    resolved = path.resolve()
+    try:
+        return resolved.relative_to(PROJECT_DIR).as_posix()
+    except ValueError:
+        return resolved.name
+
+
 def probe_duration(path: Path) -> float | None:
     if not shutil.which("ffprobe"):
         return None
@@ -245,7 +254,7 @@ def transcribe_one(
         segment["text"] for segment in segments
     )
     metadata = {
-        "source": str(audio.resolve()),
+        "source": portable_source_name(audio),
         "source_sha256": sha256_file(audio),
         "duration_seconds": probe_duration(audio),
         "created_at": datetime.now().astimezone().isoformat(timespec="seconds"),
@@ -337,4 +346,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

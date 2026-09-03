@@ -61,6 +61,18 @@ class GlossaryTests(unittest.TestCase):
         self.assertIn("VQE", prompt)
 
 
+class MetadataTests(unittest.TestCase):
+    def test_source_inside_project_is_relative(self):
+        source = transcribe.PROJECT_DIR / "recordings" / "lecture.m4a"
+        self.assertEqual(
+            transcribe.portable_source_name(source), "recordings/lecture.m4a"
+        )
+
+    def test_source_outside_project_uses_basename(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "meeting.m4a"
+            self.assertEqual(transcribe.portable_source_name(source), "meeting.m4a")
+
+
 if __name__ == "__main__":
     unittest.main()
-
